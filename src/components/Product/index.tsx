@@ -8,6 +8,7 @@ import {
   Rating
 } from './styles'
 import estrela from '../../assets/images/estrela.png'
+import Button from '../Button'
 
 type Props = {
   title: string
@@ -31,6 +32,7 @@ const Product = ({ title, description, infos, image, rating }: Props) => (
       <img src={estrela} alt="estrela" />
     </ContainerRating>
     <Descricao> {description}</Descricao>
+    <Button />
   </Card>
 )
 

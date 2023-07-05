@@ -34,7 +34,6 @@ export const Infos = styled.div`
 `
 export const ContainerRating = styled.div`
   position: relative;
-  align-items: center;
 `
 export const Rating = styled.h3`
   font-size: 18px;
