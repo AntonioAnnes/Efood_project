@@ -1,17 +1,13 @@
-// import { Link } from 'react-router-dom'
-
 import logo from '../../assets/images/logo.png'
 import Backimage from '../../assets/images/fundo.png'
-import { Hero, Imagem, Title } from './styles'
+
+import { FundoHeader, Logo, Title } from './styles'
 
 const Header = () => (
-  <Imagem style={{ backgroundImage: `url(${Backimage})` }}>
-    <div className="container">
-      <Hero>
-        <img src={logo} alt="EFOOD" />
-        <Title>Viva experiências gastronômicas no conforto da sua casa</Title>
-      </Hero>
-    </div>
-  </Imagem>
+  <FundoHeader style={{ backgroundImage: `url(${Backimage})` }}>
+    <Logo src={logo} alt="efood" />
+    <Title>Viva experiências gastronômicas no conforto da sua casa</Title>
+  </FundoHeader>
 )
+
 export default Header

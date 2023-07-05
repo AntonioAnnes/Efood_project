@@ -1,18 +1,22 @@
 import styled from 'styled-components'
-import { Cores } from '../../styles'
 
-export const Hero = styled.div``
-export const Title = styled.h1`
-  font-size: 36px;
-  font-weight: bold;
-  align-items: center;
-  text-align: center;
-`
-export const Imagem = styled.div`
+export const FundoHeader = styled.div`
   width: 100%;
-  height: 560px;
+  height: 384px;
   display: block;
-  background-repeat: no-repeat;
-  background-size: cover;
+`
+
+export const Logo = styled.img`
+  margin: 0 auto;
+  display: block;
+  padding: 64px 0 138.5px;
+`
+
+export const Title = styled.h1`
+  font-size: 36px
   font-weight: bold;
+  width: 539px;
+  line-height: 42px;
+  text-align: center;
+  margin: 0 auto;
 `
