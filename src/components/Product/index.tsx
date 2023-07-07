@@ -5,7 +5,8 @@ import {
   Titulo,
   Infos,
   ContainerRating,
-  Rating
+  Rating,
+  RatingDiv
 } from './styles'
 import estrela from '../../assets/images/estrela.png'
 import Button from '../Button'
@@ -28,8 +29,10 @@ const Product = ({ title, description, infos, image, rating }: Props) => (
     </Infos>
     <Titulo>{title}</Titulo>
     <ContainerRating>
-      <Rating>{rating}</Rating>
-      <img src={estrela} alt="estrela" />
+      <RatingDiv>
+        <Rating>{rating}</Rating>
+        <img src={estrela} alt="estrela" />
+      </RatingDiv>
     </ContainerRating>
     <Descricao> {description}</Descricao>
     <Button />

@@ -33,9 +33,14 @@ export const Infos = styled.div`
   right: 16px;
 `
 export const ContainerRating = styled.div`
-  position: relative;
+  // position: relative;
+  display: flex;
 `
 export const Rating = styled.h3`
   font-size: 18px;
   margin-right: 8px;
+`
+export const RatingDiv = styled.div`
+  display: flex;
+  justify-content: space-between;
 `
