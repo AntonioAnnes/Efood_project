@@ -1,4 +1,5 @@
 import Game from '../../models/Game'
+import Perfil from '../../models/Perfil'
 import Product from '../Product'
 
 import { Container, List } from './styles'
