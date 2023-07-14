@@ -1,16 +1,16 @@
 import ProductsList from '../../components/ProductsList'
 import pizza from '../../assets/images/pizza.png'
-import Perfil from '../../models/Perfil'
+import Game from '../../models/Game'
 
-const promocoesPerfil: Perfil[] = [
+const promocoesPerfil: Game[] = [
   {
     id: 1,
     description:
       'A clássica Marguerita: molho de tomate suculento, mussarela derretida, manjericão fresco e um toque de azeite. Sabor e simplicidade!',
     title: 'Pizza Marguerita',
     image: pizza,
-    rating: '',
-    infos: ''
+    rating: 1,
+    infos: ['']
   },
   {
     id: 2,
@@ -18,8 +18,8 @@ const promocoesPerfil: Perfil[] = [
       'A clássica Marguerita: molho de tomate suculento, mussarela derretida, manjericão fresco e um toque de azeite. Sabor e simplicidade!',
     title: 'Pizza Marguerita',
     image: pizza,
-    rating: '',
-    infos: ''
+    rating: 2,
+    infos: ['']
   },
   {
     id: 3,
@@ -27,8 +27,8 @@ const promocoesPerfil: Perfil[] = [
       'A clássica Marguerita: molho de tomate suculento, mussarela derretida, manjericão fresco e um toque de azeite. Sabor e simplicidade!',
     title: 'Pizza Marguerita',
     image: pizza,
-    rating: '',
-    infos: ''
+    rating: 3,
+    infos: ['']
   },
   {
     id: 4,
@@ -36,8 +36,8 @@ const promocoesPerfil: Perfil[] = [
       'A clássica Marguerita: molho de tomate suculento, mussarela derretida, manjericão fresco e um toque de azeite. Sabor e simplicidade!',
     title: 'Pizza Marguerita',
     image: pizza,
-    rating: '',
-    infos: ''
+    rating: 3,
+    infos: ['']
   },
   {
     id: 5,
@@ -45,8 +45,8 @@ const promocoesPerfil: Perfil[] = [
       'A clássica Marguerita: molho de tomate suculento, mussarela derretida, manjericão fresco e um toque de azeite. Sabor e simplicidade!',
     title: 'Pizza Marguerita',
     image: pizza,
-    rating: '',
-    infos: ''
+    rating: 2,
+    infos: []
   },
   {
     id: 6,
@@ -54,8 +54,8 @@ const promocoesPerfil: Perfil[] = [
       'A clássica Marguerita: molho de tomate suculento, mussarela derretida, manjericão fresco e um toque de azeite. Sabor e simplicidade!',
     title: 'Pizza Marguerita',
     image: pizza,
-    rating: '',
-    infos: ''
+    rating: 2,
+    infos: []
   }
 ]
 

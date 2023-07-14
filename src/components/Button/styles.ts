@@ -7,8 +7,10 @@ export const ButtonLink = styled.button`
   margin-top: 16px;
   color: ${Cores.branca};
   font-size: 16px;
-  font-weight: bold;
   padding: 8px 16px;
   text-decoration: none;
   font-size: 14px;
+  cursor: pointer;
+  margin-left: 8px;
+  margin-bottom: 8px;
 `

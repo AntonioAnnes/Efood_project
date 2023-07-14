@@ -6,7 +6,8 @@ import {
   Infos,
   ContainerRating,
   Rating,
-  RatingDiv
+  RatingDiv,
+  DivBorder
 } from './styles'
 import estrela from '../../assets/images/estrela.png'
 import Button from '../Button'
@@ -27,15 +28,17 @@ const Product = ({ title, description, infos, image, rating }: Props) => (
         <Tag key={info}>{info}</Tag>
       ))}
     </Infos>
-    <Titulo>{title}</Titulo>
-    <ContainerRating>
-      <RatingDiv>
-        <Rating>{rating}</Rating>
-        <img src={estrela} alt="estrela" />
-      </RatingDiv>
-    </ContainerRating>
-    <Descricao> {description}</Descricao>
-    <Button />
+    <DivBorder>
+      <Titulo>{title}</Titulo>
+      <ContainerRating>
+        <RatingDiv>
+          <Rating>{rating}</Rating>
+          <img src={estrela} alt="estrela" />
+        </RatingDiv>
+      </ContainerRating>
+      <Descricao> {description}</Descricao>
+      <Button />
+    </DivBorder>
   </Card>
 )
 

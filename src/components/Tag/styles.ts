@@ -6,9 +6,8 @@ import { Props } from '.'
 export const TagContainer = styled.div<Props>`
   background-color: ${Cores.vermelha};
   color: ${Cores.branca};
-  font-size: ${(props) => (props.size === 'big' ? '16px' : '10px')} 10px;
-  font-weight: bold;
-  padding: ${(props) => (props.size === 'big' ? '8px 16px' : '4px 6px')};
-  border-radius: 8px;
+  font-size: ${(props) => (props.size === 'big' ? '12px' : '14px')} 14px;
+  padding: ${(props) => (props.size === 'big' ? '14px 12px' : '4px 6px')};
   display: inline-block;
+  margin-right: 8px;
 `
