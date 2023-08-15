@@ -1,26 +1,32 @@
-import logo from '../../assets/images/logo.png'
-import Backimagem from '../../assets/images/fundo.png'
 import instagram from '../../assets/images/instagram.png'
 import facebook from '../../assets/images/Facebook.png'
 import twitter from '../../assets/images/Twitter.png'
-import { FundoFooter, Logo, RedesSociais, TextoFooter } from './styles'
 
-const Footer = () => (
-  <FundoFooter style={{ backgroundImage: `url(${Backimagem})` }}>
-    <div className="container">
-      <Logo src={logo} alt="efood" />
-      <RedesSociais>
-        <img src={instagram} alt="instagram" />
-        <img src={facebook} alt="facebook" />
-        <img src={twitter} alt="twitter" />
-      </RedesSociais>
-      <TextoFooter>
-        A efood é uma plataforma para divulgação de estabelicementos, a
-        responsabilidade pela entrega,qualidade dos produtos é toda do
-        estabelicimento contratado
-      </TextoFooter>
-    </div>
-  </FundoFooter>
-)
+import * as S from './styles'
+import LogoEfood from '../../assets/images/logo.png'
 
-export default Footer
+const FooterEfood = () => {
+  return (
+    <>
+      <S.Footer>
+        <div>
+          <S.Logo to={'/'}>
+            <img src={LogoEfood} alt="logo efood" />
+          </S.Logo>
+          <S.Icons>
+            <img src={instagram} alt="" />
+            <img src={facebook} alt="" />
+            <img src={twitter} alt="" />
+          </S.Icons>
+          <S.Description>
+            A efood é uma plataforma para divulgação de estabelecimentos, a
+            responsabilidade pela entrega, qualidade dos produtos é toda do
+            estabelecimento contratado.
+          </S.Description>
+        </div>
+      </S.Footer>
+    </>
+  )
+}
+
+export default FooterEfood
