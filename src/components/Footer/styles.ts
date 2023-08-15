@@ -1,25 +1,34 @@
 import styled from 'styled-components'
+import { cores } from '../../styles'
+import { Link } from 'react-router-dom'
 
-export const FundoFooter = styled.footer`
-  padding: 40px 0;
+export const Footer = styled.div`
+  background-color: ${cores.corTexto};
+  margin-top: 120px;
+  display: flex;
+  justify-content: center;
+  padding: 40px;
+`
 
-  .container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+export const Logo = styled(Link)`
+  display: flex;
+  justify-content: center;
+`
+
+export const Icons = styled.div`
+  display: flex;
+  justify-content: center;
+  margin-top: 32px;
+
+  img {
+    margin-right: 8px;
   }
 `
 
-export const Logo = styled.img`
-  padding-bottom: 32.5px;
-`
-export const RedesSociais = styled.div`
-  display: flex;
-  gap: 8px;
-  margin-bottom: 80px;
-`
-export const TextoFooter = styled.p`
-  font-size: 10px;
-  width 480px;
+export const Description = styled.p`
+  max-width: 480px;
   text-align: center;
+  font-size: 10px;
+  color: ${cores.vermelhoClaro};
+  margin-top: 80px;
 `
