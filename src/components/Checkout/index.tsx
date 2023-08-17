@@ -118,11 +118,7 @@ const Checkout = () => {
   }
 
   const pagamento = () => {
-    form.validateForm().then((errors) => {
-      if (Object.keys(errors).length === 0) {
-        setContinuarPagamento(true)
-      }
-    })
+    setContinuarPagamento(true)
   }
 
   const getTotalPrice = () => {
